@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1a2895ccc41d4ac9b1ef25e88e97bca5" Name="Diagram1">
+        <EntityTypeShape EntityType="MK2809Model.Clients" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MK2809Model.JobTitle" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MK2809Model.MagazineBarber" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MK2809Model.Services" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MK2809Model.Staff" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MK2809Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="MK2809Model.FK_MagazineBarber_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="MK2809Model.FK_MagazineBarber_JobTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="MK2809Model.FK_MagazineBarber_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="MK2809Model.FK_MagazineBarber_Staff" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

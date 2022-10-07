@@ -1,0 +1,38 @@
+﻿<Window x:Class="BarberShop28.View.Windows.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BarberShop28.View.Windows"
+        mc:Ignorable="d"
+        Title="Menu" ResizeMode="NoResize" Width="1450" Height="950" WindowStyle="None" Background="{x:Null}"
+        
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <StackPanel Background="WhiteSmoke">
+        
+        <Grid Height="auto">
+            <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0" HorizontalAlignment="Center">
+                <Button Uid="0" Width="150" Content="Журнал" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA07BF9" Click="Button_Click"/>
+                <Button Uid="1" Width="150" Content="Добавить клиента" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA07BF9" Click="Button_Click"/>
+                <Button Uid="2" Width="150" Content="Добавить сотрудника" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA07BF9" Click="Button_Click"/>
+               
+
+            </StackPanel>
+            <Grid x:Name="GridCursor" Margin="0 0 290 0" Width="150" Height="5" Background="#FFA07BF9" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+        </Grid>
+        <Grid Width="1450" Height="850">
+            <Frame Background="white" x:Name="SelectFrm"
+                 
+                   
+                   BorderBrush="black"
+                       NavigationUIVisibility="Hidden"
+                      
+                       Content="{Binding CurrentPage,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+            </Frame>
+        </Grid>
+    </StackPanel>
+</Window>
